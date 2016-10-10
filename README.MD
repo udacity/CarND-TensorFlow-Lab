@@ -1,12 +1,9 @@
 ## ToDo:
 * Add training and test dataset zip files to a host
   * Add host urls to Assignment 1
-* Add problem for TensorFlow
- * Tweaking learning rate and number of steps
-* Add script and pictures for normalizing data problem
 * Talk about training cycle
+ * Check against Lab 1
 * Modify next couple assignments to use flattened array
-* Talk about tf.matmul and matrix math for problem 3
-* Add test cases for all problems
-* In problem 3, talk about what weights and biases should be set to
- * Mention tf.zeros and tf.normal
+* Talk about tf.matmul and matrix math for problem 2
+* In problem 2, mention why we use tf.zeros and tf.normal
+* Find out why assignment doesn't display in Github
