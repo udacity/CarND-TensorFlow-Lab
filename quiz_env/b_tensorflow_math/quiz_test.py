@@ -8,7 +8,7 @@ def get_result(student_func):
     answer = 4
     result = {
         'correct': False,
-        'feedback': '',
+        'feedback': 'That\'s the wrong answer.  It should print {}'.format(answer),
         'comment': ''}
 
     try:

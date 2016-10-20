@@ -8,7 +8,7 @@ def get_result(student_func):
     answer = np.array([0.65900117, 0.24243298, 0.09856589])
     result = {
         'correct': False,
-        'feedback': '',
+        'feedback': 'That\'s the wrong answer.  It should print {}'.format(answer),
         'comment': ''}
 
     output = student_func()

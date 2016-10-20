@@ -8,7 +8,7 @@ def get_result(student_func):
     answer = 0.356675
     result = {
         'correct': False,
-        'feedback': '',
+        'feedback': 'That\'s the wrong answer.  It should print {}'.format(answer),
         'comment': ''}
 
     output = student_func()

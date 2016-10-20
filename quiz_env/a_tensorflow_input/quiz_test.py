@@ -15,7 +15,7 @@ def get_result(student_func):
         output = student_func()
         if not output:
             result['feedback'] = 'No output found'
-        if not isinstance(output, np.ndarray):
+        elif not isinstance(output, np.ndarray):
             result['feedback'] = 'Output is the wrong type.'
             result['comment'] = 'The output should come from running the session.'
         if output == answer:
