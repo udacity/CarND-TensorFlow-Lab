@@ -25,8 +25,7 @@ def get_result(student_func):
         if err.message.startswith('You must feed a value for placeholder tensor'):
             result['feedback'] = 'The placeholder is not being set.'
             result['comment'] = 'Try using the feed_dict.'
-    except Exception as err:
-        result['feedback'] = 'Something went wrong with your submission:'
-        result['comment'] = str(err)
+        else:
+            raise
 
     return result

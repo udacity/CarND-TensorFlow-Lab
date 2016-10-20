@@ -21,8 +21,10 @@ def get_result(student_func):
         if output == answer:
             result['correct'] = True
             result['feedback'] = 'That\'s right!  You correctly turned the algorithm to TensorFlow'
-    except Exception as err:
-        result['feedback'] = 'Something went wrong with your submission:'
-        result['comment'] = str(err)
+    except TypeError as err:
+        if str(err).endswith('into a Tensor or Operation.)'):
+            result['feedback'] = 'TensorFlow session requires a tensor to run'
+        else:
+            raise
 
     return result

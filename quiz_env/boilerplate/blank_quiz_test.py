@@ -7,11 +7,7 @@ def get_result(student_func):
         'feedback': '',
         'comment': ''}
 
-    try:
-        output = student_func()
-        # Check output
-    except Exception as err:
-        result['feedback'] = 'Something went wrong with your submission:'
-        result['comment'] = str(err)
+    output = student_func()
+    # Check output
 
     return result

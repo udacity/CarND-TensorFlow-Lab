@@ -19,7 +19,16 @@ def run_quiz_task(student_func, test_func, task_type):
     elif task_type == 'exec':
         # Print JSON results of running unit tests against <student_func>
         # The JSON is has the keys 'correct', 'feedback', and 'comment'
-        output = json.dumps(test_func(student_func))
+        try:
+            result = test_func(student_func)
+        except Exception as err:
+            # Default error result
+            result = {
+                'correct': False,
+                'feedback': 'Something went wrong with your submission:',
+                'comment': str(err)}
+        
+        output = json.dumps(result)
 
     return output
 
