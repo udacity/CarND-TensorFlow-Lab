@@ -2,9 +2,6 @@ import tensorflow as tf
 
 
 def run():
-    """
-    Return the session output of running the cross entropy function
-    """
     output = None
     softmax_data = [0.7, 0.2, 0.1]
     one_hot_encod_label = [1.0, 0.0, 0.0]

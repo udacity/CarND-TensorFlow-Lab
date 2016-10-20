@@ -2,9 +2,6 @@ import tensorflow as tf
 
 
 def run():
-    """
-    Return the output of softmax in the session
-    """
     output = None
     logit_data = [2.0, 1.0, 0.1]
     logits = tf.placeholder(tf.float32)

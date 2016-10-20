@@ -2,9 +2,6 @@ import tensorflow as tf
 
 
 def run():
-    """
-    Run the logits in the session and return the output
-    """
     output = None
     x_data = [[1.0, 3.0, 2.0], [2.5, 2.0, 6.3]]
     weights = [[-0.3545495, -0.17928936], [-0.63093454, 0.74906588], [0.74592733, -0.04424516]]

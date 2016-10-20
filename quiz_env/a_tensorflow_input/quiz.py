@@ -2,9 +2,6 @@ import tensorflow as tf
 
 
 def run():
-    """
-    Return the number 123 using TensorFlow
-    """
     output = None
     x = tf.placeholder(tf.int32)
 

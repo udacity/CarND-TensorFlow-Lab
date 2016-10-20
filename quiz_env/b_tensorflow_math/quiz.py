@@ -2,9 +2,6 @@ import tensorflow as tf
 
 
 def run():
-    """
-    Return the TensorFlow session output of 10/2 - 1
-    """
     output = None
     x = tf.constant(10)
     y = tf.constant(2)
