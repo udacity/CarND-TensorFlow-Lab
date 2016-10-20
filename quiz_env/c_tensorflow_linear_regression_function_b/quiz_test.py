@@ -15,7 +15,7 @@ def get_result(student_func):
     if not isinstance(output, np.ndarray):
         result['feedback'] = 'Output is the wrong type.'
         result['comment'] = 'The output should come from running the session.'
-    if np.allclose(output, answer):
+    elif np.allclose(output, answer):
         result['correct'] = True
         result['feedback'] = 'You got it!  The logits are correct'
 

@@ -18,7 +18,7 @@ def get_result(student_func):
         elif not isinstance(output, np.ndarray):
             result['feedback'] = 'Output is the wrong type.'
             result['comment'] = 'The output should come from running the session.'
-        if output == answer:
+        elif output == answer:
             result['correct'] = True
             result['feedback'] = 'You got it right.  You figure out how to use feed_dict!'
     except InvalidArgumentError as err:
