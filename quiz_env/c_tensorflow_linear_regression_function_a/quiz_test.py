@@ -1,5 +1,5 @@
 import numpy as np
-
+from tensorflow.python.framework.errors import FailedPreconditionError
 
 def get_result(student_func):
     """
@@ -11,12 +11,20 @@ def get_result(student_func):
         'feedback': 'That\'s the wrong answer.  It should print {}'.format(answer),
         'comment': ''}
 
-    output = student_func()
-    if not isinstance(output, np.ndarray):
-        result['feedback'] = 'Output is the wrong type.'
-        result['comment'] = 'The output should come from running the session.'
-    elif np.array_equal(output, answer):
-        result['correct'] = True
-        result['feedback'] = 'You correctly initalized the TensorFlow Variable!'
+    try:
+
+        output = student_func()
+        if not isinstance(output, np.ndarray):
+            result['feedback'] = 'Output is the wrong type.'
+            result['comment'] = 'The output should come from running the session.'
+        elif np.array_equal(output, answer):
+            result['correct'] = True
+            result['feedback'] = 'You correctly initalized the TensorFlow Variable!'
+    except FailedPreconditionError as err:
+        if err.message.startswith('Attempting to use uninitialized value Variable'):
+            result['feedback'] = 'TensorFlow variable uninitialized.'
+            result['comment'] = 'Run tf.initialize_all_variables() in the session.'
+        else:
+            raise
 
     return result
