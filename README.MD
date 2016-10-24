@@ -8,7 +8,7 @@ We've prepared a Jupyter notebook that will guide you through the process of cre
 Run these commands in the terminal to get started:
 ```
 pip3 install -r requirements.txt
-jupyter notebook lab_1.ipynb
+jupyter notebook lab.ipynb
 ```
 
 This will bring up a browser window with the Jupyter notebook.  The notebook has 3 problems for you to solve:
