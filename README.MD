@@ -7,7 +7,9 @@ We've prepared a Jupyter notebook that will guide you through the process of cre
 ## Get Started
 Run these commands in the terminal to get started:
 ```
-pip3 install -r requirements.txt
+conda env create -f environment.yml
+source activate CarND-TensorFlow-L2
+conda install -c conda-forge tensorflow
 jupyter notebook lab.ipynb
 ```
 
