@@ -2,6 +2,7 @@ name: CarND-TensorFlow-L2
 dependencies:
 - openssl=1.0.2j
 - pip=8.1.2
+- psutil=4.4.1
 - python>=3.4.0
 - readline=6.2
 - setuptools=27.2.0
