@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python
 
 MAINTAINER @joshuacook
 
@@ -45,7 +45,7 @@ ENV TENSORFLOW_VERSION 0.11.0rc1
 
 # Install TensorFlow CPU version from central repo
 RUN pip --no-cache-dir install \
-    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp34-cp34m-linux_x86_64.whl
+    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp35-cp35m-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
 # Set up our notebook config.
