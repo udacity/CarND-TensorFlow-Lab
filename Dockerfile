@@ -1,6 +1,6 @@
 FROM python:3.4
 
-MAINTAINER Craig Citro <craigcitro@google.com>
+MAINTAINER @joshuacook
 
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
