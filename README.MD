@@ -16,6 +16,7 @@ $ jupyter notebook lab.ipynb
 
 ## Get Started with Docker
 ```
+$ docker build -t carnd/tensorflow .
 $ docker run -it -p 8889:8888 -v `pwd`:/notebooks carnd/tensorflow
 ```
 Now this instance can be accessed at http://localhost:8889. **Note:** typically, Jupyter is hosted on port 8888. This is set to port 8889, so as not to conflict with other running Jupyter instances. 
