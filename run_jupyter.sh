@@ -14,5 +14,5 @@
 # limitations under the License.
 # ==============================================================================
 
-
+. activate CarND-TensorFlow-L2
 jupyter notebook "$@"
