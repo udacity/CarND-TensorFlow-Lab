@@ -29,19 +29,6 @@ COPY environment.yml  .
 RUN conda install --yes pyyaml
 RUN conda env create -f environment.yml
 
-ENV TENSORFLOW_VERSION 0.11.0rc1
-
-# --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
-# These lines will be edited automatically by parameterized_docker_build.sh. #
-# COPY _PIP_FILE_ /
-# RUN pip --no-cache-dir install /_PIP_FILE_
-# RUN rm -f /_PIP_FILE_
-
-# Install TensorFlow CPU version from central repo
-RUN pip --no-cache-dir install \
-    https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp35-cp35m-linux_x86_64.whl
-# --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
-
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
 

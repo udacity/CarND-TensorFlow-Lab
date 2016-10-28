@@ -50,6 +50,7 @@ dependencies:
   - simplegeneric==0.8.1
   - six==1.10.0
   - sklearn==0.0
+  - https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp35-cp35m-linux_x86_64.whl
   - terminado==0.6
   - tornado==4.4.2
   - tqdm==4.8.4
