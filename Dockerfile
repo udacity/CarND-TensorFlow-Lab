@@ -29,6 +29,9 @@ COPY environment.yml  .
 RUN conda install --yes pyyaml
 RUN conda env create -f environment.yml
 
+COPY docker_tensor_setup.sh .
+RUN bash docker_tensor_setup.sh -b
+
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
 
