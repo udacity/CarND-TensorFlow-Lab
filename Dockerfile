@@ -29,7 +29,7 @@ COPY environment.yml  .
 RUN conda install --yes pyyaml
 RUN conda env create -f environment.yml
 
-RUN conda install --name CarND-TensorFlow-L2 -c conda-forge tensorflow
+RUN conda install --name CarND-TensorFlow-Lab -c conda-forge tensorflow
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/

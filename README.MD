@@ -12,7 +12,7 @@ If you don't have Docker already, download and install Docker from [here](https:
 #### Clone the Repository
 Run the command below to clone the Lab Repository:
 ```
-$ git clone https://github.com/udacity/CarND-TensorFlow-L2.git
+$ git clone https://github.com/udacity/CarND-TensorFlow-Lab.git
 ```
 
 After running the command above, follow the “Run the Notebook” instructions to start the lab.
@@ -22,9 +22,9 @@ This lab requires [Anaconda](https://www.continuum.io/downloads) and [Python 3.4
 #### Run the Anaconda Environment
 Run these commands in your terminal to install all requirements:
 ```
-$ git clone https://github.com/udacity/CarND-TensorFlow-L2.git
+$ git clone https://github.com/udacity/CarND-TensorFlow-Lab.git
 $ conda env create -f environment.yml
-$ conda install --name CarND-TensorFlow-L2 -c conda-forge tensorflow
+$ conda install --name CarND-TensorFlow-Lab -c conda-forge tensorflow
 ```
 ## Run the Notebook
 ### Start a Jupyter Server
@@ -35,15 +35,15 @@ $ docker run -it -p 8888:8888 -v `pwd`:/notebooks udacity/carnd-tensorflow-lab
 ```
 #### OS X and Linux
 ```
-$ source activate CarND-TensorFlow-L2
+$ source activate CarND-TensorFlow-Lab
 $ jupyter notebook
 ```
 ### View The Notebook
-You setup your environment in the *Setup* steps and started a Jupyter server in the *Start a Jupyter Server* instructions above.  Open a browser window and go [here](http://localhost:8888/notebooks/CarND-TensorFlow-L2/lab.ipynb).  This is the notebook you'll be working on.  The notebook has 3 problems for you to solve:
+You setup your environment in the *Setup* steps and started a Jupyter server in the *Start a Jupyter Server* instructions above.  Open a browser window and go [here](http://localhost:8888/notebooks/CarND-TensorFlow-Lab/lab.ipynb).  This is the notebook you'll be working on.  The notebook has 3 problems for you to solve:
  - Problem 1: Normalize the features
  - Problem 2: Use TensorFlow operations to create features, labels, weight, and biases tensors
  - Problem 3: Tune the learning rate, number of steps, and batch size for the best accuracy
 
-This is a self-assessed lab.  Compare your answers to the solutions [here](https://github.com/udacity/CarND-TensorFlow-L2/blob/master/solutions.ipynb).  If you have any difficulty completing the lab, Udacity provides a few services to answer any questions you might have.
+This is a self-assessed lab.  Compare your answers to the solutions [here](https://github.com/udacity/CarND-TensorFlow-Lab/blob/master/solutions.ipynb).  If you have any difficulty completing the lab, Udacity provides a few services to answer any questions you might have.
 ## Help
 Remember that you can get assistance from your mentor, the [Forums](https://carnd-udacity.atlassian.net/wiki/questions), or the [Slack channel](https://carnd-inviter.herokuapp.com/). You can also review the concepts from the previous lessons.

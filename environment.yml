@@ -1,4 +1,4 @@
-name: CarND-TensorFlow-L2
+name: CarND-TensorFlow-Lab
 dependencies:
 - openssl=1.0.2j
 - pip=8.1.2
