@@ -31,7 +31,7 @@ $ conda install --name CarND-TensorFlow-Lab -c conda-forge tensorflow
 Make sure to run the server from the same directory that you ran in the *Setup* steps above.
 #### Windows
 ```
-$ docker run -it -p 8888:8888 -v `pwd`:/notebooks brokbucholtz/carnd-tensorflow-lab
+$ docker run -it -p 8888:8888 -v `pwd`:/notebooks udacity/carnd-tensorflow-lab
 ```
 #### OS X and Linux
 ```
