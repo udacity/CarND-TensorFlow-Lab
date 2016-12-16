@@ -1,7 +1,7 @@
 name: CarND-TensorFlow-Lab
 dependencies:
 - openssl=1.0.2j
-- pip=8.1.2
+- pip>=8.1.2
 - psutil=4.4.1
 - python>=3.4.0
 - readline=6.2
@@ -50,6 +50,7 @@ dependencies:
   - simplegeneric==0.8.1
   - six==1.10.0
   - sklearn==0.0
+  - tensorflow>=0.12.0rc1
   - terminado==0.6
   - tornado==4.4.2
   - tqdm==4.8.4
