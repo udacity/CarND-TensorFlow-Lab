@@ -8,7 +8,7 @@ We've prepared a Jupyter notebook that will guide you through the process of cre
 ## Setup
 ### Windows
 #### Install Docker
-If you don't have Docker already, download and install Docker from [here](https://docs.docker.com/engine/installation/windows/).
+If you don't have Docker already, download and install Docker from [here](https://docs.docker.com/engine/installation/windows/).  Read the [Shared Drives](https://docs.docker.com/docker-for-windows/#/shared-drives) documentation to enable drive sharing.
 #### Clone the Repository
 Run the command below to clone the Lab Repository:
 ```
@@ -29,9 +29,9 @@ $ conda install --name CarND-TensorFlow-Lab -c conda-forge tensorflow
 ## Run the Notebook
 ### Start a Jupyter Server
 Make sure to run the server from the same directory that you ran in the *Setup* steps above.
-#### Windows
+#### Windows (PowerShell)
 ```
-$ docker run -it -p 8888:8888 -v `pwd`:/notebooks udacity/carnd-tensorflow-lab
+$ docker run -it -p 8888:8888 -v ${pwd}:/notebooks udacity/carnd-tensorflow-lab
 ```
 #### OS X and Linux
 ```
