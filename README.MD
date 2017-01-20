@@ -50,4 +50,4 @@ Open a browser window and go [here](http://localhost:8888/notebooks/CarND-Tensor
 
 This is a self-assessed lab.  Compare your answers to the solutions [here](https://github.com/udacity/CarND-TensorFlow-Lab/blob/master/solutions.ipynb).  If you have any difficulty completing the lab, Udacity provides a few services to answer any questions you might have.
 ## Help
-Remember that you can get assistance from your mentor, the [Forums](http://carnd-forums.udacity.com/questions), or the [Slack channel](https://carnd-slack.udacity.com). You can also review the concepts from the previous lessons.
+Remember that you can get assistance from your mentor, the Forums (click the link on the left side of the classroom), or the [Slack channel](https://carnd-slack.udacity.com). You can also review the concepts from the previous lessons.
