@@ -13,7 +13,7 @@ source activate {environment_name}
 ```
 and then open the notebook with
 ```
-jupyter notebook.
+jupyter notebook
 ```
 
 #### The Lab
