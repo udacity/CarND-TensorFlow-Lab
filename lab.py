@@ -226,7 +226,7 @@ print('Data cached in pickle file.')
 # In[8]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 # Load the modules
 import pickle
