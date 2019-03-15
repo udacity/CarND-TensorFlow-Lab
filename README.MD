@@ -25,7 +25,6 @@ The notebook has 3 problems for you to solve:
 
 This is a self-assessed lab.  Compare your answers to the solutions [here](https://github.com/udacity/CarND-TensorFlow-Lab/blob/master/solutions.ipynb).  If you have any difficulty completing the lab, Udacity provides a few services to answer any questions you might have.
 
-If you have any difficulty completing the lab, Udacity provides a few services to answer any questions you might have.
 
 ## Help
 Remember that you can get assistance from mentors and fellow students in Student Hub or in Knowledge. You can also review the concepts from the previous lessons.
